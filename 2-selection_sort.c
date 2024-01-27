@@ -41,7 +41,7 @@ void selection_sort(int *array, size_t size)
 		if (i != idx)
 		{
 			swap(array, i, idx);
-			print_array(array, size)
+			print_array(array, size);
 		}
 	}
 }
