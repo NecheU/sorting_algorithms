@@ -12,16 +12,15 @@ void insertion_sort_list(listint_t **list)
 	listint_t *comprd_node, *j;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
-
-		return;
+	return;
 
 	comprd_node = (*list)->next;
 
 	while (comprd_node)
 	{
-		 j = comprd_node->next;
+	 j = comprd_node->next;
 
-		 while (comprd_node->prev != NULL && comprd_node->n < comprd_node->prev->n)
+	 while (comprd_node->prev != NULL && comprd_node->n < comprd_node->prev->n)
 		 {
 			 comprd_node->prev->next = comprd_node->next;
 
